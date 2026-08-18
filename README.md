@@ -1,16 +1,27 @@
-# React + Vite
+# InsurancePool App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Full GenLayer Project – Parametric Flight Delay Insurance Pool.
 
-Currently, two official plugins are available:
+## Live App
+https://insurance-pool-app.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Contract (Testnet Bradbury)
+0x1913bE0df2Ffa71e42623ae74833b06B5a990DeE
 
-## React Compiler
+## Features
+- View live pool stats (deposits, paid out, balance)
+- Deposit GEN capital into the pool (with real msg.value)
+- Open parametric flight claims
+- Resolve claims via AI consensus
+- Automatic payout on approved claims
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech
+- React + Vite
+- genlayer-js
+- Testnet Bradbury
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## How to use
+1. Connect MetaMask (Bradbury network)
+2. Deposit some GEN
+3. Open a claim with flight details + status URL
+4. Resolve – AI validators fetch live data and reach consensus
